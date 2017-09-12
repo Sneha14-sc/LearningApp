@@ -57,20 +57,20 @@
 
 
 
-        $scope.$watch('$ctrl.drawData',function(newVal, oldVal){
-            console.log('changed');
-            // console.log('type chart',$ctrl.drawData.columns[1]);
-            $ctrl.chartTest.load({
-                columns: $ctrl.drawData.columns,
-                names:   $ctrl.drawData.names,
-                type:    $ctrl.drawData.typeChart,
-                colors: $ctrl.drawData.colors
-                // color: {
-                //     pattern: $ctrl.drawData.pattern
-                // }
-
-            });
-        },true);
+        // $scope.$watch('$ctrl.drawData',function(newVal, oldVal){
+        //     console.log('changed');
+        //     // console.log('type chart',$ctrl.drawData.columns[1]);
+        //     $ctrl.chartTest.load({
+        //         columns: $ctrl.drawData.columns,
+        //         names:   $ctrl.drawData.names,
+        //         type:    $ctrl.drawData.typeChart,
+        //         colors: $ctrl.drawData.colors
+        //         // color: {
+        //         //     pattern: $ctrl.drawData.pattern
+        //         // }
+        //
+        //     });
+        // },true);
 
     }
 

@@ -19,6 +19,13 @@
                 templateUrl: 'src/hxLearningApp/learningApp.html'
             })
 
+            .state('hxLearningApp.learningProgress',{
+                url:'/hxLearningApp/learningProgress',
+                templateUrl:'src/hxLearningApp/learningProgressDisp.html',
+                controller:'learningProgressController',
+                controllerAs:'$leProDi'
+            })
+
             .state('hxLearningApp.learningQuestions',{
                 url:'/hxLearningApp/learningQuestions',
                 templateUrl:'src/hxLearningApp/learningQuestionsDisp.html',
