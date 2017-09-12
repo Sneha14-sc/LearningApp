@@ -1,0 +1,11 @@
+<!--<md-button flex="15" class="md-accent md-raised" ng-click="$ctrl.showChart()">{{$ctrl.statusChart}}</md-button>-->
+<md-card layout="column" class="layout-wrap">
+
+    <md-card-content>Time:{{$ctrl.dataTime | date:'yyyy-MM-dd HH:mm:ss'}}</md-card-content>
+    <md-card-content style="text-align: center">{{$ctrl.chartTitle}}</md-card-content>
+    <md-card-content>
+        <div id="c3jsDrawChart"></div>
+    </md-card-content>
+</md-card>
+
+

@@ -1,0 +1,12 @@
+/* css file for demo app*/
+.navBardemoBasicUsage md-content .ext-content {
+  padding: 50px;
+  margin: 20px;
+  background-color: #FFF2E0; }
+.table-div {
+  padding: 10px;
+  margin: 10px;
+  border-color:red;
+  border-style:double;
+  border-radius: 10px;
+}

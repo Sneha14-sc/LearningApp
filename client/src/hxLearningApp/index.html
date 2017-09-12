@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app="hxLearningApp">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1"/>
+    <meta charset="utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <base href="/">
+    <title >Chart</title>
+    <meta name="fragment" content="!">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.3/angular-material.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+</head>
+<body  ng-strict-di ng-cloak>
+<div class="diem-scrollable">
+    <!-- Header -->
+    <header class="container" id="SITE_HEADER" name="top">
+        <div ng-cloak>
+            <md-content class="md-padding">
+                <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
+                    <md-nav-item md-nav-sref="hxLearningApp.learningQuestions" name="learningQuestions">Questions</md-nav-item>
+
+                    <refesh-button></refesh-button>
+                </md-nav-bar>
+
+            </md-content>
+
+        </div>
+    </header>
+    <!-- End header -->
+    <ui-view>
+        <div class="text-center initial-loading">
+            <h2>Loading Site...</h2>
+        </div>
+    </ui-view>
+    <!-- Footer -->
+    <footer class="container" id="SITE_FOOTER" >
+        <div id="WRchTxt0-16wb" class="Text">
+            <p style="text-align: center;" class="font_9"><span class="color_13">©2017 Proudly created by </span><u><span class="color_13">Hachi-x</span></u></p>
+        </div>
+    </footer>
+    <!-- End footer -->
+</div>
+<!-- Libs -->
+
+<script src="lib/jquery-2.1.4.min.js"></script>
+<script src="lib/angular.min.js"></script>
+<script src="lib/angular-ui-router.min.js"></script>
+
+<!--ng-material-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-animate.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-aria.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-messages.min.js"></script>
+<!-- Angular Material Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.3/angular-material.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/build/hxPOSAdmin.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</body>
+</html>

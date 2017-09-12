@@ -1,0 +1,15 @@
+{
+  "short_name": "Diem Admin App",
+  "name": "Restaurant Admin APP",
+  "icons": [
+    {
+      "src": "./launcher-icon-1x.png",
+      "sizes": "32x44",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "landscape-primary",
+  "bluetooth": { }
+}
