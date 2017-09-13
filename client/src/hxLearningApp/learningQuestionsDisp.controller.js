@@ -71,21 +71,23 @@
                 }
             ];
 
-            $leQueDi.index=0;
+            $leQueDi.index=learningAppDataService.tempIndex;
             $leQueDi.dataDummy=dummyData[$leQueDi.index];
             $leQueDi.isRight=function () {
-              learningAppDataService.correctNumber++;
+              learningAppDataService.numberCorrect++;
             };
             $leQueDi.next = function () {
                 $leQueDi.index++;
                 $leQueDi.dataDummy=dummyData[$leQueDi.index];
-                learningAppDataService.correctNumber++;
+                learningAppDataService.tempIndex= $leQueDi.index;
+                // learningAppDataService.numberCorrect++;
             };
 
             $leQueDi.back = function () {
                 $leQueDi.index--;
                 $leQueDi.dataDummy=dummyData[$leQueDi.index];
 
+learningAppDataService.tempIndex= $leQueDi.index;
             };
             console.log('inside the learningQuestionsController');
 

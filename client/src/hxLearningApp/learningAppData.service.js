@@ -9,6 +9,7 @@
     function learningAppDataService($rootScope){
         var service = this;
         //set up data holder
+        service.tempIndex=0;
         service.numberCorrect=0;
         // service.updateNumberCorrectUp=function () {
         //      service.numberCorrect++;

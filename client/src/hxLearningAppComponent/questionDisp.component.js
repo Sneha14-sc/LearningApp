@@ -34,7 +34,7 @@
               else {
                 $ctrl.selectedIndex = index;
               }
-            var answerNumber= $ctrl.questionData[index].number;
+            var answerNumber= $ctrl.questionData.answers[index].number;
             $ctrl.answerNow=answerNumber;
 
         };
