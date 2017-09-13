@@ -1,0 +1,9 @@
+bower_components/
+.idea/
+node_modules/
+config/
+log/
+*.DS_Store
+build/
+spec/
+.env

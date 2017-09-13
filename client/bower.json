@@ -1,0 +1,32 @@
+{
+  "name": "AdminRestaurantApp",
+  "homepage": "https://github.com/jankoller888/AdminRestaurantApp",
+  "authors": [
+    "dp <duc.phan@hachi-x.com>"
+  ],
+  "description": "AdminRestaurantApp",
+  "main": "",
+  "keywords": [
+    "manange",
+    "POS",
+    "product",
+    "collection"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.6.4",
+    "angular-material": "^1.1.4",
+    "angular-ui-router": "^1.0.4",
+    "auth0.js": "^8.8.0",
+    "angular-auth0": "2.0.0-beta.2",
+    "angular-jwt": "^0.1.9"
+  }
+}
