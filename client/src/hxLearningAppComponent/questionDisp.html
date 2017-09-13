@@ -8,19 +8,21 @@
 
 
 <div layout="column" layout-align="center center">
-    <div>
+    <div layout="row">
         <md-card>
-            <md-card-title>
-                <md-card-title-text>
-                    <span class="md-headline">categories:{{$ctrl.questionData.categories}}</span>
-                </md-card-title-text>
-            </md-card-title>
             <md-card-content>
-               <p>number:{{$ctrl.questionData.number}}</p>
-                <p>year:{{$ctrl.questionData.year}}</p>
-                <p>Description:{{$ctrl.questionData.description}}</p>
+                {{$ctrl.questionData.number}}
             </md-card-content>
+        </md-card>
 
+        <div>
+            <p>categories:{{$ctrl.questionData.categories}}</p>
+            <p>Description:{{$ctrl.questionData.description}}</p>
+        </div>
+        <md-card>
+            <md-card-content>
+                {{$ctrl.questionData.year}}
+            </md-card-content>
         </md-card>
     </div>
     <div>
@@ -34,7 +36,7 @@
                 {{$ctrl.questionData.question}}
             </md-card-content>
 
-            <md-list-item class="md-3-line check-element " ng-repeat="item in $ctrl.questionData.answers" ng-click="$ctrl.answerItem(item.number)">
+            <md-list-item class="answer-box" ng-repeat="item in $ctrl.questionData.answers" ng-click="$ctrl.answerItem(item.number)">
                 <div class="md-list-item-text" layout="column">
                     <h3>{{ item.content }}</h3>
                 </div>

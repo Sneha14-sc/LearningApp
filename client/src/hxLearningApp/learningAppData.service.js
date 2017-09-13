@@ -10,12 +10,17 @@
         var service = this;
         //set up data holder
         service.numberCorrect=0;
-        service.updateNumberCorrect=function () {
-             service.numberCorrect++;
-        };
-        service.getNumberCorrect=function () {
-          return service.numberCorrect;
-        }
+        // service.updateNumberCorrectUp=function () {
+        //      service.numberCorrect++;
+        // };
+        //
+        // service.updateNumberCorrectDown=function () {
+        //     service.numberCorrect--;
+        // };
+        //
+        // service.getNumberCorrect=function () {
+        //   return service.numberCorrect;
+        // }
 
     }
 })();

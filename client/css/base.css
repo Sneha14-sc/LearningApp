@@ -21,8 +21,23 @@ div.diem-scrollable{
     transition: all linear 0.5s;
 }
 
-.check-element {
-    border: 1px solid black;
-    opacity: 1;
-    padding: 10px;
+.answer-box {
+    /*border-radius: 25px;*/
+    border: 2px solid #73AD21;
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    /*z-index: -1;*/
+    /*padding: 20px;*/
+    /*width: 200px;*/
+    /*height: 150px;*/
+}
+
+.md-list-item-text:focus {
+    background-color: cornflowerblue;
+    /*z-index: 10;*/
+}
+h3 {
+    z-index: 10;
 }
