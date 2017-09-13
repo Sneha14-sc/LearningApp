@@ -3,6 +3,6 @@
  */
 (function () {
     "use strict";
-    angular.module('hxLearningAppComponent',[]);
+    angular.module('hxLearningAppComponent',['hxNotificationModule']);
 
 })();

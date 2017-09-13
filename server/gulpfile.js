@@ -20,6 +20,7 @@ gulp.task('clientJs', function () {
             '../client/src/hxStaffLanguage/hxStafflanguage.module.js',
             '../client/src/hxc3jsChart/c3jsChart.module.js',
             '../client/src/hxLearningAppComponent/hxLearningAppComponent.module.js',
+            '../client/src/hxNotification/hxNotification.module.js',
             '../client/src/hxLearningApp/learningApp.module.js',
             //'../client/src/admin/hxPOSAdmin.module.js',
             '../client/src/**/**/*.js',

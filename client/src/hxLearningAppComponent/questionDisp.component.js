@@ -14,8 +14,8 @@
                 isRight: '&'
             }
         });
-    questionDispController.$inject=['$scope'];
-    function  questionDispController($scope) {
+    questionDispController.$inject=['$scope','hxScoreNotifService'];
+    function  questionDispController($scope,hxScoreNotifService) {
         var $ctrl = this;
         $ctrl.status='inside questionDisp component';
         $ctrl.selectedIndex=null;
@@ -44,9 +44,11 @@
             $ctrl.answerResult=$ctrl.answerNow;
             if ($ctrl.answerResult===$ctrl.questionData.correctAnswer) {
                 console.log('right');
+                $scope.$emit('is_Right');
                 $ctrl.isRight();
             }
             else {
+                $scope.$emit('is_Wrong');
                 console.log('wrong');
             }
 

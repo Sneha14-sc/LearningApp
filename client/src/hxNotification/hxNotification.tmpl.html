@@ -1,0 +1,11 @@
+<md-toast>
+  <span class="md-toast-text" flex>
+    {{$ctrl.text.message|translate}}
+    {{$ctrl.text.number}}
+    {{$ctrl.text.unit|translate}}
+    {{$ctrl.text.status|translate}}
+  </span>
+  <md-button ng-click="$ctrl.closeToast()">
+    X
+  </md-button>
+</md-toast>
