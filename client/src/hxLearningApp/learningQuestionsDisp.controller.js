@@ -73,13 +73,19 @@
             $leQueDi.index=0;
             $leQueDi.dataDummy=dummyData[$leQueDi.index];
             $leQueDi.isRight=function () {
-              return true;
+              learningAppDataService.correctNumber++;
             };
             $leQueDi.next = function () {
                 $leQueDi.index++;
                 $leQueDi.dataDummy=dummyData[$leQueDi.index];
-                learningAppDataService.updateNumberCorrect();
-                console.log('index',$leQueDi.index);
+                learningAppDataService.correctNumber++;
+            };
+
+            $leQueDi.back = function () {
+                $leQueDi.index--;
+                $leQueDi.dataDummy=dummyData[$leQueDi.index];
+
+
             };
             console.log('inside the learningQuestionsController');
 

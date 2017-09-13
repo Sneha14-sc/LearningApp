@@ -12,7 +12,11 @@ gulp.task('clientJs', function () {
     gulp.src([
             '../client/lib/ng-translate/angular-translate.min.js',
             '../client/lib/ng-translate/angular-translate-loader-static-files.min.js',
-            'lib/ng-translate/angular-translate-loader-partial.min.js',
+            '../client/lib/d3.min.js',
+            '../client/lib/c3.min.js',
+            '../client/lib/c3-angular.min.js',
+            // '../client/lib/c3.min.css',
+            '../client/lib/ng-translate/angular-translate.min.js',
             '../client/src/common/language.module.js',
             '../client/src/hxc3jsChart/c3jsChart.module.js',
             '../client/src/hxLearningApp/learningApp.module.js',

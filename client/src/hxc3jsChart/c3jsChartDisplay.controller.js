@@ -16,7 +16,11 @@
             var $c3jsChart = this;
             $c3jsChart.printedCheck="Check ok";
 
-
+            $c3jsChart.drawData=[
+                ['correctNumber',1],
+                ['totalNumber',2]
+            ];
+            $c3jsChart.drawTitle="Study Status";
             $c3jsChart.randomScalingFactor = function() {
                 return Math.round(Math.random() * 100);
             };

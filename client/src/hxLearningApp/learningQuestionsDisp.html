@@ -5,6 +5,10 @@
     <div>
         <question-disp question-data="$leQueDi.dataDummy" is-right="$leQueDi.isRight()"></question-disp>
     </div>
-    <md-button class="md-raised md-primary" ng-click="$leQueDi.next()">Next</md-button>
+    <div layout="row">
+        <md-button class="md-raised" ng-click="$leQueDi.back()">Back</md-button>
+        <md-button class="md-raised md-primary" ng-click="$leQueDi.next()">Next</md-button>
+    </div>
+
 </div>
 
