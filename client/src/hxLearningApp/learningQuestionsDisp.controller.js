@@ -5,8 +5,8 @@
         "use strict";
         angular.module('hxLearningApp')
             .controller('learningQuestionsController', learningQuestionsController);
-            learningQuestionsController.$inject = ['$state'];
-        function learningQuestionsController($state) {
+            learningQuestionsController.$inject = ['$state','learningAppDataService'];
+        function learningQuestionsController($state,learningAppDataService) {
             var $leQueDi = this;
             $leQueDi.printedCheck="Check learningQuestionController ok!";
             var dummyData=[{
@@ -72,9 +72,13 @@
             ];
             $leQueDi.index=0;
             $leQueDi.dataDummy=dummyData[$leQueDi.index];
+            $leQueDi.isRight=function () {
+              return true;
+            };
             $leQueDi.next = function () {
                 $leQueDi.index++;
                 $leQueDi.dataDummy=dummyData[$leQueDi.index];
+                learningAppDataService.updateNumberCorrect();
                 console.log('index',$leQueDi.index);
             };
             console.log('inside the learningQuestionsController');

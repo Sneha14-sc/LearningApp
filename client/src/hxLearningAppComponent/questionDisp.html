@@ -34,7 +34,7 @@
                 {{$ctrl.questionData.question}}
             </md-card-content>
 
-            <md-list-item class="md-3-line" ng-repeat="item in $ctrl.questionData.answers" ng-click="$ctrl.answerItem(item.number)">
+            <md-list-item class="md-3-line check-element " ng-repeat="item in $ctrl.questionData.answers" ng-click="$ctrl.answerItem(item.number)">
                 <div class="md-list-item-text" layout="column">
                     <h3>{{ item.content }}</h3>
                 </div>
