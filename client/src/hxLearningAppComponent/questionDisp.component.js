@@ -18,11 +18,25 @@
     function  questionDispController($scope) {
         var $ctrl = this;
         $ctrl.status='inside questionDisp component';
+        $ctrl.selectedIndex=null;
+
         $scope.$watch('$ctrl.questionData',function(newVal, oldVal){
             $ctrl.flagClickAnswer=false;
         },true);
-        $ctrl.answerItem= function (answerNumber) {
+
+        $ctrl.answerItem= function (index) {
+            if ($ctrl.selectedIndex === null) {
+                $ctrl.selectedIndex = index;
+              }
+              else if ($ctrl.selectedIndex === index) {
+                $ctrl.selectedIndex = null;
+              }
+              else {
+                $ctrl.selectedIndex = index;
+              }
+            var answerNumber= $ctrl.questionData[index].number;
             $ctrl.answerNow=answerNumber;
+
         };
 
         $ctrl.answerStatus=function () {

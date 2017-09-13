@@ -1,31 +1,29 @@
-<!--<div>-->
-    <!--question Disp Component : {{$ctrl.questionData.status}}-->
-<!--</div>-->
-<!--<div>-->
-    <!--bindingData : {{$ctrl.questionData.bindingData}}-->
-<!--</div>-->
+<style>
+.selectedIndex {
+  background: #43A047;
+  color: white;
+}
+</style>
 
-
-
-<div layout="column" layout-align="center center">
-    <div layout="row">
-        <md-card>
+<div layout="column" layout-padding layout-align="center center">
+    <div flex layout="row">
+        <md-card md-colors="{background: 'red'}">
+            <md-card-title>
+                <span> NO. {{$ctrl.questionData.number}} </span>
+            </md-card-title>
+            <md-divider></md-divider>
             <md-card-content>
-                {{$ctrl.questionData.number}}
+                <span> {{$ctrl.questionData.year}} </span>
             </md-card-content>
         </md-card>
-
-        <div>
-            <p>categories:{{$ctrl.questionData.categories}}</p>
-            <p>Description:{{$ctrl.questionData.description}}</p>
-        </div>
         <md-card>
             <md-card-content>
-                {{$ctrl.questionData.year}}
+              <p>categories:{{$ctrl.questionData.categories}}</p>
+              <p>Description:{{$ctrl.questionData.description}}</p>
             </md-card-content>
         </md-card>
     </div>
-    <div>
+    <div flex style="min-width:100%">
         <md-card>
             <md-card-title>
                 <md-card-title-text>
@@ -36,19 +34,18 @@
                 {{$ctrl.questionData.question}}
             </md-card-content>
 
-            <md-list-item class="answer-box" ng-repeat="item in $ctrl.questionData.answers" ng-click="$ctrl.answerItem(item.number)">
+            <md-list-item ng-class="{selectedIndex: $ctrl.selectedIndex===$index}" ng-repeat="item in $ctrl.questionData.answers" ng-click="$ctrl.answerItem($index)">
                 <div class="md-list-item-text" layout="column">
                     <h3>{{ item.content }}</h3>
                 </div>
+                <md-divider></md-divider>
             </md-list-item>
 
             <md-card-content class="check-element animate-show-hide" ng-show="$ctrl.flagClickAnswer">
                 {{$ctrl.questionData.explanation}}
             </md-card-content>
 
-            <md-button class="md-raised md-warn" ng-click="$ctrl.answerStatus()">Answer</md-button>
-
-
+            <md-button class="md-raised" md-colors="{background: 'green'}" ng-click="$ctrl.answerStatus()">Answer</md-button>
         </md-card>
     </div>
 </div>

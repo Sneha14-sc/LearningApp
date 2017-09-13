@@ -70,6 +70,7 @@
                     explanation:'this is the explanation for the question'
                 }
             ];
+
             $leQueDi.index=0;
             $leQueDi.dataDummy=dummyData[$leQueDi.index];
             $leQueDi.isRight=function () {
@@ -84,7 +85,6 @@
             $leQueDi.back = function () {
                 $leQueDi.index--;
                 $leQueDi.dataDummy=dummyData[$leQueDi.index];
-
 
             };
             console.log('inside the learningQuestionsController');
