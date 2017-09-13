@@ -3,7 +3,12 @@
  */
 (function () {
     "use strict";
-    angular.module('hxLearningApp',['ui.router','ngMaterial','hxc3jsChart'])
+    angular.module('hxLearningApp',[
+                        'ui.router',
+                        'ngMaterial',
+                        'hxc3jsChart',
+                        'hxLearningAppComponent'
+                      ])
         .config(config);
     config.$inject = ['$urlRouterProvider'];
     function config($urlRouterProvider) {

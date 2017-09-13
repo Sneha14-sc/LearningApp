@@ -87,7 +87,7 @@
                 $leQueDi.index--;
                 $leQueDi.dataDummy=dummyData[$leQueDi.index];
 
-learningAppDataService.tempIndex= $leQueDi.index;
+                learningAppDataService.tempIndex= $leQueDi.index;
             };
             console.log('inside the learningQuestionsController');
 

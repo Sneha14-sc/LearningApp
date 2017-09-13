@@ -3,7 +3,7 @@
  */
 (function(){
     "use strict";
-    angular.module('hxLearningApp')
+    angular.module('hxLearningAppComponent')
         .component('questionDisp',{
             templateUrl:'/src/hxLearningAppComponent/questionDisp.html',
             controller:questionDispController,
