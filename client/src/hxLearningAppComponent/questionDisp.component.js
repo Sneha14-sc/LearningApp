@@ -22,6 +22,7 @@
 
         $scope.$watch('$ctrl.questionData',function(newVal, oldVal){
             $ctrl.flagClickAnswer=false;
+            $ctrl.selectedIndex=null;
         },true);
 
         $ctrl.answerItem= function (index) {

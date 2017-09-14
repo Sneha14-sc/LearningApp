@@ -7,9 +7,9 @@
 
 <div layout="column" layout-padding layout-align="center center">
     <div flex layout="row">
-        <md-card md-colors="{background: 'red'}">
+        <md-card flex="20" md-colors="{background: 'red'}">
             <md-card-title>
-                <span> NO. {{$ctrl.questionData.number}} </span>
+                <span> NO.{{$ctrl.questionData.number}} </span>
             </md-card-title>
             <md-divider></md-divider>
             <md-card-content>
@@ -30,6 +30,8 @@
                     <span class="md-headline">the Question 1</span>
                 </md-card-title-text>
             </md-card-title>
+
+            <img ng-src="{{$ctrl.questionData.image}}" class="md-card-image">
             <md-card-content>
                 {{$ctrl.questionData.question}}
             </md-card-content>
