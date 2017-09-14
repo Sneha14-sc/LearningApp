@@ -7,7 +7,8 @@
                         'ui.router',
                         'ngMaterial',
                         'hxc3jsChart',
-                        'hxLearningAppComponent'
+                        'hxLearningAppComponent',
+                        'hxNotificationModule'
                       ])
         .config(config);
     config.$inject = ['$urlRouterProvider'];

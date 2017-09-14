@@ -8,6 +8,7 @@
             learningQuestionsController.$inject = ['$state','learningAppDataService'];
         function learningQuestionsController($state,learningAppDataService) {
             var $leQueDi = this;
+            var service= learningAppDataService;
             $leQueDi.printedCheck="Check learningQuestionController ok!";
             var dummyData=[{
                 categories: "teeth",
@@ -88,6 +89,11 @@
                 $leQueDi.dataDummy=dummyData[$leQueDi.index];
 
                 learningAppDataService.tempIndex= $leQueDi.index;
+            };
+
+            $leQueDi.challenge = function (obj) {
+                service.challenge=obj;
+                $state.go('hxLearningApp.challenge', {challengeQuestion: obj});
             };
             console.log('inside the learningQuestionsController');
 

@@ -1,0 +1,22 @@
+<style>
+.selectedIndex {
+  background: #43A047;
+  color: white;
+}
+</style>
+
+<div layout-padding layout-align="center center">
+  <div layout="column">
+    <h2>{{'FRIEND LIST'|translate}}</h2>
+    <md-list-item ng-class="{selectedIndex: $ctrl.selectedIndex===$index}" ng-repeat="friend in $ctrl.friendList" ng-click="$ctrl.selectedItem($index)">
+        <div class="md-list-item-text" layout="column">
+            <h3>{{ friend.name }}</h3>
+        </div>
+        <md-divider></md-divider>
+    </md-list-item>
+    <md-button ng-disabled="$ctrl.question==null" ng-click="$ctrl.send()" class="md-raised" md-colors="{background: $ctrl.btnColor}">
+      <p class="material-icons">send</p>
+      {{'SEND'|translate}} {{'CHALLENGE'|translate}}
+    </md-button>
+  <div>
+</div>

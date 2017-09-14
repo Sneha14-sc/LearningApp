@@ -7,6 +7,6 @@
     * This module is in charge of display various types of notification.
     */
 
-    angular.module('hxNotificationModule',[]);
+    angular.module('hxNotificationModule',['hxStaffLanguageModule']);
 
 })();

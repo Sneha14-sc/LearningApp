@@ -20,18 +20,27 @@
             })
 
             .state('hxLearningApp.learningProgress',{
-                url:'/hxLearningApp/learningProgress',
+                url:'/',
                 templateUrl:'src/hxLearningApp/learningProgressDisp.html',
                 controller:'learningProgressController',
                 controllerAs:'$leProDi'
             })
 
             .state('hxLearningApp.learningQuestions',{
-                url:'/hxLearningApp/learningQuestions',
+                url:'/learningQuestions',
                 templateUrl:'src/hxLearningApp/learningQuestionsDisp.html',
                 controller:'learningQuestionsController',
                 controllerAs:'$leQueDi'
             })
+            .state('hxLearningApp.challenge',{
+                url:'/challenge',
+                templateUrl:'src/hxLearningApp/challenge.html',
+                params: {
+                    challengeQuestion: null
+                },
+                controller:'challengeController',
+                controllerAs:'$ctrl'
+            });
 
     }
 })();

@@ -11,6 +11,17 @@
         //set up data holder
         service.tempIndex=0;
         service.numberCorrect=0;
+        service.challenge={};
+        service.friendList=[
+          { name: "TRUNG",
+            email: "abc@xyz.com"},
+          { name: "HIEP",
+            email: "abc@xyz.com"},
+          { name: "TOMOHIRO FUKUDA",
+            email: "abc@xyz.com"},
+          { name: "AKIHITO SANO",
+            email: "abc@xyz.com"},
+        ];
         // service.updateNumberCorrectUp=function () {
         //      service.numberCorrect++;
         // };

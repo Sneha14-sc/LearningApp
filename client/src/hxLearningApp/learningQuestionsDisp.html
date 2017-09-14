@@ -18,11 +18,15 @@
 <div layout="column" layout-align="center center">
     <question-disp question-data="$leQueDi.dataDummy" is-right="$leQueDi.isRight()"></question-disp>
     <div layout="row" layout>
-      <md-button flex="50" class="md-raised button backbutton" ng-click="$leQueDi.back()">
+      <md-button class="md-raised button backbutton" ng-click="$leQueDi.back()">
         <p class="material-icons">keyboard_arrow_left</p>
       </md-button>
-      <md-button flex="50" class="md-raised button nextbutton" ng-click="$leQueDi.next()">
+      <md-button class="md-raised button nextbutton" ng-click="$leQueDi.next()">
           <p class="material-icons">keyboard_arrow_right</p>
+      </md-button>
+      <md-button flex="75" class="md-raised button nextbutton md-warn" ng-click="$leQueDi.challenge($leQueDi.dataDummy)">
+          <p class="material-icons">mail</p>
+          <span> {{'CHALLENGE'|translate}} </span>
       </md-button>
     </div>
 </div>
