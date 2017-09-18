@@ -19,10 +19,12 @@
         var $ctrl = this;
         $ctrl.status='inside questionDisp component';
         $ctrl.selectedIndex=null;
+        $ctrl.flagRightAnswer=null;
 
         $scope.$watch('$ctrl.questionData',function(newVal, oldVal){
             $ctrl.flagClickAnswer=false;
             $ctrl.selectedIndex=null;
+            $ctrl.flagRightAnswer=null;
         },true);
 
         $ctrl.answerItem= function (index) {
@@ -41,8 +43,10 @@
         };
 
         $ctrl.answerStatus=function () {
-            $ctrl.flagClickAnswer=true;
+            // $ctrl.flagClickAnswer=true;
             $ctrl.answerResult=$ctrl.answerNow;
+            $ctrl.flagRightAnswer=$ctrl.questionData.correctAnswer-1; // $index counting from 0
+
             if ($ctrl.answerResult===$ctrl.questionData.correctAnswer) {
                 console.log('right');
                 $scope.$emit('is_Right');
