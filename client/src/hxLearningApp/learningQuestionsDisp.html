@@ -1,12 +1,28 @@
 <!--<div>-->
     <!--Learning question : {{$leQueDi.printedCheck}}-->
 <!--</div>-->
+<style>
+/*.button {
+  height: 100px;
+  max-width:10px;
+  position:absolute;
+}
+.nextbutton{
+  right:0px;
+}
+.backbutton{
+  left:0px;
+}*/
+</style>
+
 <div layout="column" layout-align="center center">
-
     <question-disp question-data="$leQueDi.dataDummy" is-right="$leQueDi.isRight()"></question-disp>
-    <div layout="row">
-        <md-button class="md-raised" ng-click="$leQueDi.back()">Back</md-button>
-        <md-button class="md-raised md-primary" ng-click="$leQueDi.next()">Next</md-button>
+    <div layout="row" layout>
+      <md-button flex="50" class="md-raised button backbutton" ng-click="$leQueDi.back()">
+        <p class="material-icons">keyboard_arrow_left</p>
+      </md-button>
+      <md-button flex="50" class="md-raised button nextbutton" ng-click="$leQueDi.next()">
+          <p class="material-icons">keyboard_arrow_right</p>
+      </md-button>
     </div>
-
 </div>

@@ -3,7 +3,7 @@
  */
 (function(){
     "use strict";
-    angular.module('hxLearningApp')
+    angular.module('hxLearningAppComponent')
         .component('progressDisp',{
             templateUrl:'/src/hxLearningAppComponent/progressDisp.html',
             controller:progressDispController,
