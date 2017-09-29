@@ -10,28 +10,29 @@
 </style>
 
 <div layout="column" layout-padding layout-align="center center">
-    <div flex layout="row">
-        <md-card flex="20" md-colors="{background: 'red'}">
+    <div flex style="min-width:100%">
+        <div layout="row">
+        <md-card flex="30" md-colors="{background: 'red'}">
             <md-card-title>
-                <span> NO.{{$ctrl.questionData.number}} </span>
+                <span> {{'Problem'|translate}} {{$ctrl.questionData.number}} </span>
             </md-card-title>
             <md-divider></md-divider>
             <md-card-content>
-                <span> {{$ctrl.questionData.year}} </span>
+                <span> {{$ctrl.questionData.year}} {{'year'|translate}} </span>
             </md-card-content>
         </md-card>
         <md-card>
             <md-card-content>
-              <p>categories:{{$ctrl.questionData.categories}}</p>
-              <p>Description:{{$ctrl.questionData.description}}</p>
+              <p>{{$ctrl.questionData.categories|translate}}</p>
             </md-card-content>
         </md-card>
+        </div>
     </div>
     <div flex style="min-width:100%">
         <md-card>
             <md-card-title>
                 <md-card-title-text>
-                    <span class="md-headline">the Question 1</span>
+                    <span class="md-headline">{{$ctrl.questionData.description|translate}}</span>
                 </md-card-title-text>
             </md-card-title>
 
@@ -43,13 +44,13 @@
             <!--<md-list-item ng-class="{selectedIndex: $ctrl.selectedIndex===$index,rightAnswer: $ctrl.flagRightAnswer===$index}" ng-repeat="item in $ctrl.questionData.answers" ng-click="$ctrl.answerItem($index)">-->
             <md-list-item ng-class="{selectedIndex: $ctrl.selectedIndex===$index}" ng-repeat="item in $ctrl.questionData.answers" ng-click="$ctrl.answerItem($index)">
                 <div class="md-list-item-text" layout="column">
-                    <h3>{{ item.content }}</h3>
+                    <h3>{{ item.content | translate}}</h3>
                 </div>
                 <md-divider></md-divider>
             </md-list-item>
 
             <md-card-content class="check-element animate-show-hide" ng-show="$ctrl.flagClickAnswer">
-                {{$ctrl.questionData.explanation}}
+                {{$ctrl.questionData.explanation|translate}}
                 <rating-comp rating="$ctrl.questionData.rating"></rating-comp>
             </md-card-content>
 
