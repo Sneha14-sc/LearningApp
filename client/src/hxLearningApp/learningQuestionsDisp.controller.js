@@ -54,22 +54,22 @@
                     answers: [
                         {
                             number: 1,
-                            content: 'a 彫刻性が良好である。'
+                            content: "a 彫刻性が良好である"
                         },
 
                         {
                             number: 2,
-                            content: 'b 熱収縮が極めて大きい'
+                            content: "b 熱収縮が極めて大きい"
                         },
 
                         {
                             number: 3,
-                            content: 'c 加熱後の蒸発残が多い。'
+                            content: "c 加熱後の蒸発残が多い"
                         },
 
                         {
                             number: 4,
-                            content: 'd 色調が模型の色と類似する'
+                            content: "d 色調が模型の色と類似する"
                         }
                     ] ,
                     image :'images/wax.jpg',
