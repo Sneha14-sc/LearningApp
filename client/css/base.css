@@ -73,4 +73,75 @@ h3 {
     background: forestgreen;
 }
 
+.recommendation {
+
+    position: relative;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    line-height: 20px;
+    background-color: #fff;
+    border: 8px solid #666;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 2px 2px 4px #888;
+    -moz-box-shadow: 2px 2px 4px #888;
+    box-shadow: 2px 2px 4px #888;
+    /*display: block;*/
+    /*width: 250px;*/
+    /*height: 60px;*/
+    /*padding: 12px 10px 5px 10px;*/
+    /*background:dodgerblue;*/
+    /*text-align: center;*/
+    /*font-size: 12px;*/
+    /*border-radius: 20px 20px 20px 20px;*/
+    /*box-shadow: 0 0 4px;*/
+    /*color: white;*/
+}
+.space {
+    height: 20px;
+}
+
+.talk-bubble {
+    margin: 40px;
+    display: inline-block;
+    position: relative;
+    padding: 12px 10px 5px 10px;
+    width: 250px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    height: auto;
+    background-color: dodgerblue;
+    border-radius: 20px 20px 20px 20px;
+}
+/*Right triangle, placed bottom left side slightly in*/
+.tri-right.border.btm-left:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -8px;
+    right: auto;
+    top: auto;
+    bottom: -40px;
+    border: 32px solid;
+    border-color: transparent transparent transparent #666;
+}
+.tri-right.btm-left:after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 30px;
+    right: auto;
+    top: auto;
+    bottom: -20px;
+    border: 22px solid;
+    border-color: transparent transparent transparent dodgerblue;
+}
+.image-doctor {
+    width: 150px;
+}
 
