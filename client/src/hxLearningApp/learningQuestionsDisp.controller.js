@@ -39,6 +39,10 @@
                 ] ,
                 correctAnswer: 1,
                 explanation:'this is the explanation for the question',
+                rating:{
+                  like: 1,
+                  dislike:0
+                },
                 image :'images/teeth.jpeg'
             },
                 {
@@ -70,7 +74,11 @@
                     ] ,
                     image :'images/lung.jpeg',
                     correctAnswer: 2,
-                    explanation:'this is the explanation for the question'
+                    explanation:'this is the explanation for the question',
+                    rating:{
+                      like: 2,
+                      dislike:0
+                    }
                 }
             ];
 
