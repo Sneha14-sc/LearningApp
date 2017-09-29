@@ -40,7 +40,8 @@
                 {{$ctrl.questionData.question}}
             </md-card-content>
 
-            <md-list-item ng-class="{selectedIndex: $ctrl.selectedIndex===$index,rightAnswer: $ctrl.flagRightAnswer===$index}" ng-repeat="item in $ctrl.questionData.answers" ng-click="$ctrl.answerItem($index)">
+            <!--<md-list-item ng-class="{selectedIndex: $ctrl.selectedIndex===$index,rightAnswer: $ctrl.flagRightAnswer===$index}" ng-repeat="item in $ctrl.questionData.answers" ng-click="$ctrl.answerItem($index)">-->
+            <md-list-item ng-class="{selectedIndex: $ctrl.selectedIndex===$index}" ng-repeat="item in $ctrl.questionData.answers" ng-click="$ctrl.answerItem($index)">
                 <div class="md-list-item-text" layout="column">
                     <h3>{{ item.content }}</h3>
                 </div>
