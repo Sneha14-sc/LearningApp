@@ -41,3 +41,36 @@ div.diem-scrollable{
 h3 {
     z-index: 10;
 }
+
+.progress-wrapper{
+    position: relative;
+    height: 200px;
+    width: 200px;
+
+}
+
+.progress-wrapper .round-button {
+
+    display:block;
+    width:180px;
+    height:180px;
+    line-height:90px;
+    border: 2px solid #f5f5f5;
+    border-radius: 50%;
+    top:10px;
+    left: 10px;
+    color:#f5f5f5;
+    text-align:center;
+    text-decoration:none;
+    background: green;
+    box-shadow: 0 0 3px gray;
+    font-size:40px;
+    font-weight:bold;
+    position: absolute;
+    z-index: 1;
+}
+.progress-wrapper .round-button:hover {
+    background: forestgreen;
+}
+
+

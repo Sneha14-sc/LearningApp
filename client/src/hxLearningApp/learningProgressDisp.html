@@ -2,5 +2,8 @@
     <!--Learning Progress : {{$leProDi.printedCheck}}-->
 <!--</div>-->
 
-<progress-disp correct-number="$leProDi.correctNumber" total-number="$leProDi.totalNumber"></progress-disp>
-<draw-chart draw-data="$leProDi.drawData" data-title="$leProDi.drawTitle"></draw-chart>
+<!--<progress-disp correct-number="$leProDi.correctNumber" total-number="$leProDi.totalNumber"></progress-disp>-->
+<!--<draw-chart draw-data="$leProDi.drawData" data-title="$leProDi.drawTitle"></draw-chart>-->
+<div layout="column" layout-align="center center">
+    <progress-chart progress-data="$leProDi.drawData" go-state="$leProDi.changeState()"></progress-chart>
+</div>
