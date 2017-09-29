@@ -1,7 +1,13 @@
 {
-  "ENTER_YOUR_ID": "ID",
-  "ENTER_YOUR_PASSWORD": "パスワード",
-  "LOGIN":"ログイン",
+  "PROGRESS": "進捗",
+  "QUESTIONS": "学習",
+  "FRIEND LIST":"友達",
+
+
+
+
+
+
   "START_TIME":"Thời gian bắt đầu",
   "STATUS":"状態",
   "NAME":"名前",

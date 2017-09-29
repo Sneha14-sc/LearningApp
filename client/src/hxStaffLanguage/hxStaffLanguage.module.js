@@ -105,8 +105,8 @@
         });
 
         // set default language
-        $translateProvider.preferredLanguage('vn');
-        $translateProvider.fallbackLanguage('vn');
+        $translateProvider.preferredLanguage('jp');
+        $translateProvider.fallbackLanguage('jp');
         $translateProvider.forceAsyncReload(true);
     }
 })();
