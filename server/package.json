@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "main": "mainServer.js",
   "dependencies": {
+    "angular-chart.js": "^1.1.1",
     "async": "2.1.4",
     "bcrypt-nodejs": "0.0.3",
     "bluebird": "3.4.7",
