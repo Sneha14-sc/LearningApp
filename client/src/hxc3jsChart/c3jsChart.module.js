@@ -6,7 +6,7 @@
  */
 (function () {
     "use strict";
-    angular.module('hxc3jsChart',['ui.router','ngMaterial','gridshore.c3js.chart'])
+    angular.module('hxc3jsChart',['ui.router','ngMaterial','gridshore.c3js.chart','angular-svg-round-progressbar'])
         .config(config);
     config.$inject = ['$urlRouterProvider'];
     function config($urlRouterProvider) {

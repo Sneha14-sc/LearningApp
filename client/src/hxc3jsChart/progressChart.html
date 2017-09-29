@@ -1,0 +1,38 @@
+<!--<round-progress-->
+        <!--max="$ctrl.progressData.totalNumber"-->
+        <!--current="$ctrl.progressData.correctNumber"-->
+        <!--color="#45ccce"-->
+        <!--bgcolor="#eaeaea"-->
+        <!--radius="100"-->
+        <!--stroke="20"-->
+        <!--semi="false"-->
+        <!--rounded="true"-->
+        <!--clockwise="false"-->
+        <!--responsive="false"-->
+        <!--duration="800"-->
+        <!--animation="easeInOutQuart"-->
+        <!--animation-delay="5"></round-progress>-->
+
+<div class="progress-wrapper" layout-align="center">
+    <div
+            round-progress
+            max="$ctrl.progressData.totalNumber"
+            current="$ctrl.progressData.correctNumber"
+            color="#45ccce"
+            bgcolor="#eaeaea"
+            radius="100"
+            stroke="10"
+            semi="false"
+            rounded="true"
+            clockwise="true"
+            responsive="false"
+            duration="800"
+            animation="easeInOutQuart"
+            animation-delay="0"
+            offset="0"></div>
+
+    <button class="round-button" ng-click="$ctrl.goState()">
+        {{$ctrl.progressData.correctNumber}}/{{$ctrl.progressData.totalNumber}}
+
+    </button>
+</div>

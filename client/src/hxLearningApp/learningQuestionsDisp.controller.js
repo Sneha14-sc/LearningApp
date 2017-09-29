@@ -39,6 +39,7 @@
                 ] ,
                 correctAnswer: 1,
                 explanation:'this is the explanation for the question',
+                image :'images/teeth.jpeg'
             },
                 {
                     categories: "lung",
@@ -67,6 +68,7 @@
                             content: 'The answer 4'
                         }
                     ] ,
+                    image :'images/lung.jpeg',
                     correctAnswer: 2,
                     explanation:'this is the explanation for the question'
                 }
