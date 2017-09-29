@@ -11,70 +11,70 @@
             var service= learningAppDataService;
             $leQueDi.printedCheck="Check learningQuestionController ok!";
             var dummyData=[{
-                categories: "teeth",
+                categories: "歯科理工学 (歯科材料の性質)",
                 number:1,
-                year:2017,
-                description: "the question about teeth",
-                question:"this is question content",
+                year:2016,
+                description: "",
+                question:"接触アレルギーの危険性が低いのはどれか。",
                 answers: [
                     {
                         number: 1,
-                        content: 'The answer 1'
+                        content: 'a Ni'
                     },
 
                     {
                         number: 2,
-                        content: 'The answer 2'
+                        content: 'b Cr'
                     },
 
                     {
                         number: 3,
-                        content: 'The answer 3'
+                        content: 'c Co'
                     },
 
                     {
                         number: 4,
-                        content: 'The answer 4'
+                        content: 'd Ti'
                     }
                 ] ,
                 correctAnswer: 1,
-                explanation:'this is the explanation for the question',
+                explanation:'解説内容',
                 rating:{
                   like: 1,
                   dislike:0
                 },
-                image :'images/teeth.jpeg'
+                image :''
             },
                 {
-                    categories: "lung",
+                    categories: "歯科理工学(ワックス)",
                     number:2,
-                    year:2017,
-                    description: "the question about teeth",
-                    question:"this is question content",
+                    year:2015,
+                    description: "",
+                    question:"インレーワックスの特徴はどれか",
                     answers: [
                         {
                             number: 1,
-                            content: 'The answer 1'
+                            content: 'a 彫刻性が良好である。'
                         },
 
                         {
                             number: 2,
-                            content: 'The answer 2'
+                            content: 'b 熱収縮が極めて大きい'
                         },
 
                         {
                             number: 3,
-                            content: 'The answer 3'
+                            content: 'c 加熱後の蒸発残が多い。'
                         },
 
                         {
                             number: 4,
-                            content: 'The answer 4'
+                            content: 'd 色調が模型の色と類似する'
                         }
                     ] ,
-                    image :'images/lung.jpeg',
+                    image :'images/wax.jpeg',
                     correctAnswer: 2,
-                    explanation:'this is the explanation for the question',
+                    explanation:'解説内容',
                     rating:{
                       like: 2,
                       dislike:0
