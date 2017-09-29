@@ -1,4 +1,22 @@
-<div layout="row">
-    <p class="material-icons" style="font-size:20px; color:'blue';">{{$ctrl.rating.like}}thumb_up</p>
-    <p class="material-icons" style="font-size:20px; color:'red';">{{$ctrl.rating.dislike}}thumb_down</p>
+<style>
+.rating-like {
+  font-size:30px;
+  color: #03A9F4;
+}
+
+.rating-dislike {
+  font-size:30px;
+  color: #F44336;
+}
+
+
+</style>
+
+<div layout="row" layout-align="end center">
+    <div class="rating-like" ng-click="$ctrl.like()">
+      <span>{{$ctrl.rating.like}}</span> <p class="material-icons">thumb_up</p>
+    </div>
+    <div class="rating-dislike" ng-click="$ctrl.dislike()">
+      <span>{{$ctrl.rating.dislike}}</span> <p class="material-icons">thumb_down</p>
+    </div>
 </div>

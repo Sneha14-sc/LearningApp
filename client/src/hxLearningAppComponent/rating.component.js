@@ -22,7 +22,7 @@
         };
 
         $ctrl.dislike=function(){
-          $ctrl.rating.displike--;
+          $ctrl.rating.dislike++;
         };
       }
 })();
