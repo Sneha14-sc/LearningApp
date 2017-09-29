@@ -72,7 +72,7 @@
                             content: 'd 色調が模型の色と類似する'
                         }
                     ] ,
-                    image :'images/wax.jpeg',
+                    image :'images/wax.jpg',
                     correctAnswer: 2,
                     explanation:'解説内容',
                     rating:{
