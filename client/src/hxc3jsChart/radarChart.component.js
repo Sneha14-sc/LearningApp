@@ -20,6 +20,11 @@
         var $ctrl = this;
 
         console.log('inside radar chart');
+      $ctrl.labels = $ctrl.radarData.labels;
+      $ctrl.data = $ctrl.radarData.data;
+
+        $ctrl.options = $ctrl.radarData.options;
+        console.log('data',$ctrl.data);
 
         // $scope.$watch('$ctrl.radarData',function(newVal, oldVal){
         //     console.log('changed');

@@ -9,18 +9,12 @@
         "use strict";
         angular.module('hxc3jsChart')
             .controller('c3jsChartDisplayController', c3jsChartDisplayController);
-        // c3jsChartDisplayController.$inject = ['commonService','$rootScope','$interval'];
-        // function c3jsChartDisplayController(commonService,$rootScope,$interval) {
-        c3jsChartDisplayController.$inject = ['$interval'];
-        function c3jsChartDisplayController($interval) {
+        c3jsChartDisplayController.$inject = ['$rootScope','$interval'];
+        function c3jsChartDisplayController($rootScope,$interval) {
             var $c3jsChart = this;
             $c3jsChart.printedCheck="Check ok";
 
-            $c3jsChart.drawData=[
-                ['correctNumber',1],
-                ['totalNumber',2]
-            ];
-            $c3jsChart.drawTitle="Study Status";
+
             $c3jsChart.randomScalingFactor = function() {
                 return Math.round(Math.random() * 100);
             };
@@ -34,7 +28,36 @@
                 'bar',
                 'pie'
             ];
+            ///
+            $c3jsChart.radarData = {
+                labels : ["January", "February", "March", "April", "May", "June", "July"],
+                series: ['Series A', 'Series B'],
+                data: [
+                    [65, 59, 80, 81, 56, 55, 40],
+                    [28, 48, 40, 19, 86, 27, 90]
+                ],
+                options: {
+                    scales: {
+                        yAxes: [
+                            {
+                                id: 'y-axis-1',
+                                type: 'linear',
+                                display: true,
+                                position: 'left'
+                            },
+                            {
+                                id: 'y-axis-2',
+                                type: 'linear',
+                                display: true,
+                                position: 'right'
+                            }
+                        ]
+                    }
+                }
+            };
 
+
+            ///
 
             $c3jsChart.chart={
 
@@ -43,7 +66,7 @@
                     ['data1', 30, 200, 100, 400, 200],
                     ['data2', 50, 20, 10, 40, 15, 25]
 
-               ],
+                ],
 
                 names: {
                     data1:'name1',
@@ -82,7 +105,7 @@
                 },
 
 
-                   chartTitle:'The c3js Chart'
+                chartTitle:'The c3js Chart'
 
 
             };
@@ -115,4 +138,45 @@
         }
     }
 )();
+
+
+
+
+
+
+            // $c3jsChart.radarData = {
+            //     labels : ["January", "February", "March", "April", "May", "June", "July"],
+            //     series: ['Series A', 'Series B'],
+            //     data: [
+            //         [65, 59, 80, 81, 56, 55, 40],
+            //         [28, 48, 40, 19, 86, 27, 90]
+            //         ],
+            //     options: {
+            //         scales: {
+            //             yAxes: [
+            //                 {
+            //                     id: 'y-axis-1',
+            //                     type: 'linear',
+            //                     display: true,
+            //                     position: 'left'
+            //                 },
+            //                 {
+            //                     id: 'y-axis-2',
+            //                     type: 'linear',
+            //                     display: true,
+            //                     position: 'right'
+            //                 }
+            //             ]
+            //         }
+            //     }
+            // };
+
+            // $c3jsChart.drawData= {
+            //     correctNumber : 1,
+            //     totalNumber: 5
+            // };
+
+
+
+
 
