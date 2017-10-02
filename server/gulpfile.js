@@ -15,7 +15,6 @@ gulp.task('clientJs', function () {
             '../client/lib/d3.min.js',
             '../client/lib/c3.min.js',
             '../client/lib/c3-angular.min.js',
-            // '../client/lib/c3.min.css',
             '../client/lib/ng-translate/angular-translate.min.js',
             '../client/src/hxStaffLanguage/hxStafflanguage.module.js',
             '../client/src/hxc3jsChart/c3jsChart.module.js',

@@ -15,8 +15,8 @@
                 drawData:'<'
             }
         });
-    c3jsDrawChartController.$inject=['$scope','$interval'];
-    function  c3jsDrawChartController($scope,$interval) {
+    c3jsDrawChartController.$inject=['$scope','$timeout','$interval'];
+    function  c3jsDrawChartController($scope,$timeout,$interval) {
         var $ctrl = this;
         $ctrl.statusChart='Show Chart';
         console.log('statusChart',$ctrl.statusChart);
@@ -76,4 +76,3 @@
 
 
 })();
-

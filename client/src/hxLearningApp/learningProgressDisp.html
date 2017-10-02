@@ -13,18 +13,54 @@
       <h1>{{'USER_PROGRESS'|translate}}</h1>
       <progress-chart progress-data="$leProDi.drawData" go-state="$leProDi.changeState()"></progress-chart>
   </div>
-</div>
-<!--<div class="space"></div>-->
-<div layout="row" layout-align="center end">
-    <!--<div class="recommendation">You are studying in beginner level!<br> Do you want to level it up?</div>-->
-    <div class="talk-bubble tri-right round btm-left">
-        <div class="talktext">
-            <p>You are studying in beginner level!<br> Do you want to level it up?</p>
+
+
+    <md-divider></md-divider>
+    <div layout="column" layout-align="center center">
+        <md-button class="md-raised md-primary" ng-click="$leProDi.showDetails()">{{$leProDi.buttonContent}}</md-button>
+
+        <div style="width: 100%; padding-top: 20px; padding-bottom: 20px;" ng-show="$leProDi.flagShowDetail">
+            <radar-chart radar-data="$leProDi.radarData"></radar-chart>
         </div>
     </div>
-</div>
 
-<!--<div class="space"></div>-->
-<div layout-align="center start">
-    <img ng-src="/images/doctor.png" class="md-card-image image-doctor" alt="Washed Out">
+    <div layout="column" ng-show="$leProDi.flagShowDetail">
+        <div layout="row" style="margin-left: 10px; margin-right: 10px" layout-align="center center">
+            <p style="width: 80px">Heart</p>
+            <md-progress-linear md-mode="determinate" class="md-accent" value="20"></md-progress-linear>
+        </div>
+
+        <div layout="row" style="margin-left: 10px; margin-right: 10px" layout-align="center center">
+            <p style="width: 80px">Lung</p>
+            <md-progress-linear md-mode="determinate" value="50"></md-progress-linear>
+        </div>
+
+        <div layout="column">
+            <div layout="row" layout-align="end center">
+                <!--<div class="recommendation">You are studying in beginner level!<br> Do you want to level it up?</div>-->
+                <div class="talk-bubble tri-right round btm-left">
+                    <div class="talktext">
+                        <p>You are studying in beginner level!<br> Do you want to level it up?</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--<div class="space"></div>-->
+            <div layout-align="start start">
+                <img ng-src="/images/doctor.png" class="md-card-image image-doctor">
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <md-divider></md-divider>
+
 </div>
+<!--<div class="space"></div>-->
+
+
+
+

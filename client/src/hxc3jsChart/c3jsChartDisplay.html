@@ -1,16 +1,21 @@
 
 <div layout="row">
     <md-input-container flex="15">
-     <label>SelectChart</label>
+        <label>SelectChart</label>
         <md-select ng-model="$c3jsChart.chart.typeChart">
             <md-option ng-repeat="item in $c3jsChart.listChart" value="{{item}}">{{item}}</md-option>
         </md-select>
     </md-input-container>
 </div>
 
-<c3js-draw-chart draw-data="$c3jsChart.chart"></c3js-draw-chart>
-<div>DrawChart</div>
-<draw-chart draw-data="$c3jsChart.drawData" data-title="$c3jsChart.drawTitle"></draw-chart>
+
+<!--<c3js-draw-chart draw-data="$c3jsChart.chart"></c3js-draw-chart>-->
+
+<!--<c3js-draw-chart draw-data="$c3jsChart.chart"></c3js-draw-chart>-->
+<!--<div>DrawChart</div>-->
+<!--<draw-chart draw-data="$c3jsChart.drawData" data-title="$c3jsChart.drawTitle"></draw-chart>-->
+
+<radar-chart radar-data="$c3jsChart.radarData"></radar-chart>
 
 
 
