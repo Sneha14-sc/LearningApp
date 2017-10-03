@@ -12,7 +12,7 @@ const io = require('socket.io')(server);
 /**
  * Constant Value
  */
-const PORT    = 80;
+const PORT    = 8080;
 
 app.disable('x-powered-by');   // for security
 
